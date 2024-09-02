@@ -46,8 +46,8 @@ namespace SBRC {
             unsigned int m_microseconds = 1500;
             float m_bias = 0.0f;
 
-            const int MIN_PERCENTAGE = -100;
-            const int MAX_PERCENTAGE = 100;
+            const float MIN_PERCENTAGE = -100;
+            const float MAX_PERCENTAGE = 100;
             const unsigned int MIN_MICROSECONDS = 1000;
             const unsigned int MAX_MICROSECONDS = 2000;
             

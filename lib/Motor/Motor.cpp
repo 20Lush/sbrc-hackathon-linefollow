@@ -15,7 +15,7 @@ void SBRC::Motor::Init(unsigned char pin) {
 
 unsigned int SBRC::Motor::GetMicroseconds() {
 
-    m_microseconds = SBRC::Map<unsigned int, float>(m_power_percent, MIN_PERCENTAGE, MAX_PERCENTAGE, MIN_MICROSECONDS, MAX_MICROSECONDS);
+    m_microseconds = SBRC::Map<float, unsigned int>(m_power_percent, MIN_PERCENTAGE, MAX_PERCENTAGE, MIN_MICROSECONDS, MAX_MICROSECONDS);
 
     return m_microseconds;
 }
